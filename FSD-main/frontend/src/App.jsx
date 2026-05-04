@@ -1086,13 +1086,9 @@ export default function App() {
   const [pendingOpp, setPendingOpp] = useState(null);
   const [toasts, setToasts] = useState([]);
 
-  const [currentUser, setCurrentUser] = useState({
-    id: 1, name: "Priya Mehta", email: "volunteer@demo.com", password: "pass123",
-    role: "Volunteer", verified: true, joinedAt: "2026-01-15"
-  });
-  const [users, setUsers] = useState([
-    { id: 1, name: "Priya Mehta", email: "volunteer@demo.com", password: "pass123", role: "Volunteer", verified: true, joinedAt: "2026-01-15" }
-  ]);
+  const [currentUser, setCurrentUser] = useState(null);
+  const [users, setUsers] = useState([]);
+
   const [ngos, setNgos] = useState(INITIAL_NGOS);
   const [opportunities, setOpportunities] = useState(INITIAL_OPPORTUNITIES);
   const [applications, setApplications] = useState(INITIAL_APPLICATIONS);
